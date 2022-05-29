@@ -1,0 +1,33 @@
+.desktop {
+  background: #F5F8FF;
+  padding: 170px 0;
+  overflow: hidden;
+
+  &__col-plan {
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+
+  &__example {
+    position: relative;
+  }
+
+  &__example:after {
+    display: block;
+    position: absolute;
+    background: url("/assets/illustration.svg");
+    height: 736px;
+    width: 854px;
+    content: "";
+    top: -103px;
+    right: -60%;
+  }
+
+}

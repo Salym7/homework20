@@ -1,0 +1,78 @@
+body {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $font-md;
+  color: $accent-color;
+}
+
+.container-lg,
+.container-md {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: $container-lg-width;
+}
+
+
+.container-md {
+  max-width: $container-md-width;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  //&:active {
+  //  color: pink!important;
+  //  transition: .3s;
+  //}
+
+}
+
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.intro-title {
+  font-size: $font-ms;
+  font-family: $main-font;
+  font-weight: 500;
+  color: $title-color;
+}
+
+.title {
+  font-family: $font-quicksand;
+  font-weight: 500;
+  color: $title-color;
+
+}

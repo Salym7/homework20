@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Bold"), local("Quicksand-Bold"), url("../fonts/Quicksand-Bold.woff2") format("woff2"), url("../fonts/Quicksand-Bold.woff") format("woff"), url("../fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Medium"), local("Quicksand-Medium"), url("../fonts/Quicksand-Medium.woff2") format("woff2"), url("../fonts/Quicksand-Medium.woff") format("woff"), url("../fonts/Quicksand-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url("../fonts/Quicksand-Regular.woff2") format("woff2"), url("../fonts/Quicksand-Regular.woff") format("woff"), url("../fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #8D96BD;
+}
+
+.container-lg,
+.container-md {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 1235px;
+}
+
+.container-md {
+  max-width: 920px;
+}
+
+a {
+  color: #8D96BD;
+  text-decoration: none;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.intro-title {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #3D4F9F;
+}
+
+.title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #3D4F9F;
+}
+
+.header {
+  padding: 18px 0;
+  border-bottom: 1px solid #D8E3FE;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
+.header__navigation {
+  gap: 73px;
+}
+.header__navigation-logo a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #5E81FE;
+  border-radius: 50%;
+}
+.header__navigation-logo a:hover {
+  background-color: mediumpurple;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.header__navigation nav ul {
+  gap: 42px;
+}
+.header__navigation nav ul a.active, .header__navigation nav ul a:hover:not(.active) {
+  font-weight: 700;
+  color: #5E81FE;
+}
+.header__navigation nav ul a:hover:not(.active) {
+  font-weight: 400;
+  transition: 0.3s;
+}
+.header__social {
+  gap: 44px;
+}
+.header__social-icons ul {
+  gap: 38px;
+}
+.header__social-cta a {
+  display: inline-block;
+  background: #D2E1FF;
+  border-radius: 2px;
+  padding: 13px 21px;
+  color: #3A79FF;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.plane {
+  padding-top: 90px;
+  background: url("/assets/bg.png") no-repeat 50% 100%;
+  height: 578px;
+  border-bottom: 1px solid #D8E3FE;
+}
+.plane__inner {
+  text-align: center;
+}
+.plane__text {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.plane__title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.plane__title-light {
+  font-weight: 300;
+}
+
+.company {
+  padding: 60px 0;
+  border-bottom: 1px solid #D8E3FE;
+}
+.company__menu {
+  align-items: flex-end;
+}
+
+.desktop {
+  background: #F5F8FF;
+  padding: 170px 0;
+  overflow: hidden;
+}
+.desktop__col-plan {
+  width: 50%;
+}
+.desktop__title {
+  font-size: 36px;
+}
+.desktop__text {
+  margin-bottom: 60px;
+}
+.desktop__example {
+  position: relative;
+}
+.desktop__example:after {
+  display: block;
+  position: absolute;
+  background: url("/assets/illustration.svg");
+  height: 736px;
+  width: 854px;
+  content: "";
+  top: -103px;
+  right: -60%;
+}
+
+/*# sourceMappingURL=style.css.map */
