@@ -3,10 +3,12 @@ body {
   font-weight: 400;
   font-size: $font-md;
   color: $accent-color;
+  line-height: 1.8;
 }
 
 .container-lg,
-.container-md {
+.container-md,
+.container-sd {
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
@@ -16,9 +18,12 @@ body {
   max-width: $container-lg-width;
 }
 
-
 .container-md {
   max-width: $container-md-width;
+}
+
+.container-sd {
+  max-width: $container-sd-width
 }
 
 a {
@@ -61,6 +66,10 @@ a {
 
 .justify-content-space-between {
   justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center
 }
 
 .intro-title {
