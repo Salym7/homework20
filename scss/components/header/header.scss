@@ -28,7 +28,7 @@
     nav {
       ul {
         gap: 42px;
-        
+
         a {
           &.active,
           &:hover:not(.active) {
@@ -41,7 +41,7 @@
             transition: .3s;
           }
         }
-        
+
       }
     }
 
@@ -53,7 +53,16 @@
 
     &-icons {
       ul {
-        gap: 38px
+        gap: 38px;
+
+        i {
+          font-size: 20px;
+
+          &:hover {
+            color: #3A79FF;
+            transition: .3s;
+          }
+        }
       }
     }
 

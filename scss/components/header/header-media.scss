@@ -1,0 +1,102 @@
+.header {
+  &__media-menu-btn {
+    display: none;
+  }
+
+
+  @media (min-width: $media-header) {
+    [for="media-menu-btn"] {
+      display: none;
+    }
+
+    .hidden-desktop {
+      display: none;
+    }
+  }
+
+
+  @media (max-width: $media-header) {
+    & {
+      position: relative;
+      min-height: $header_height;
+      max-height: $header_height;
+    }
+
+
+    &__social-cta {
+      display: none;
+    }
+
+    .row {
+      justify-content: space-between;
+    }
+
+    &__social {
+      width: initial;
+    }
+
+    & [for="media-menu-btn"] {
+      background: #D2E1FF;
+      border-radius: 2px;
+      padding: 13px 21px;
+      color: #3A79FF;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &__navigation {
+      width: 18%;
+      min-width: 140px;
+      gap: 30px;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+
+      nav {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: $header_height;
+        left: 0;
+        background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+
+        ul {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        a {
+          display: block;
+          text-align: center;
+          padding: 10px 0;
+          font-size: 20px;
+
+          &:hover {
+            color: white !important;
+            background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+            transition: .3s;
+          }
+        }
+
+      }
+    }
+    &__media-menu-btn {
+      &:checked {
+        & + nav {
+          display: initial;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: $media-header-400) {
+    &__navigation {
+      gap: 20px;
+    }
+    &__social-icons ul {
+      gap: 25px;
+    }
+  }
+}

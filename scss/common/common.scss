@@ -30,11 +30,6 @@ a {
   color: $accent-color;
   text-decoration: none;
 
-  //&:active {
-  //  color: pink!important;
-  //  transition: .3s;
-  //}
-
 }
 
 
@@ -84,4 +79,21 @@ a {
   font-weight: 500;
   color: $title-color;
 
+}
+
+.features {
+  @media (max-width: $breakpoint-xl) {
+
+    .container-sd {
+      max-width: 550px;
+    }
+  }
+}
+
+.stats {
+  @media (max-width: $breakpoint-sm) {
+    .container-sd {
+      padding: 0;
+    }
+  }
 }

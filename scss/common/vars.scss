@@ -7,10 +7,27 @@ $font-open-sans: 'Open Sans', sans-serif;
 $font-md: 15px;
 $font-sm: 12px;
 $font-ms: 10px;
-
+$header_height: 83px;
 
 $accent-color: #8D96BD;
 $secondary-accent-color: #5E81FE;
 $title-color: #3D4F9F;
 $btn-color: #4C85FF;
-$white-color: #ffffff
+$white-color: #ffffff;
+$stats-color-first: #6888FF;
+$stats-color-second: #E9EFFF;
+
+
+$media-header: 900px;
+$media-header-400: 400px;
+$media-customers: 450px;
+
+$media-about: 765px;
+$media-about1: 576px;
+
+$breakpoint-xs: 450px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xll: 1400px;
