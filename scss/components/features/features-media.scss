@@ -32,6 +32,10 @@
     }
     &__box-title {
       margin-bottom: 10px;
+      font-size: $font-lg;
+    }
+    &__box-text {
+      font-size: $font-md;
     }
   }
 

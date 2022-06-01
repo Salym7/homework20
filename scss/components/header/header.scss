@@ -56,10 +56,10 @@
         gap: 38px;
 
         i {
-          font-size: 20px;
+          font-size: $font-lg;
 
           &:hover {
-            color: #3A79FF;
+            color: $title-color;
             transition: .3s;
           }
         }
@@ -69,12 +69,12 @@
     &-cta {
       a {
         display: inline-block;
-        background: #D2E1FF;
+        background: $bg-link;
         border-radius: 2px;
         padding: 13px 21px;
-        color: #3A79FF;
+        color: $color-link;
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 13px;
+        font-size: $font-smm;
         font-weight: 700;
       }
     }

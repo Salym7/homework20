@@ -19,7 +19,7 @@
   }
 
   &__title {
-    font-size: 36px;
+    font-size: $font-xl;
     margin-bottom: 20px;
   }
 
@@ -30,7 +30,7 @@
 
   &__btn {
     font-family: $font-quicksand;
-    font-size: 13px;
+    font-size: $font-smm;
 
     &-view {
       color: $white-color;

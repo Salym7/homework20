@@ -36,11 +36,11 @@
     }
 
     & [for="media-menu-btn"] {
-      background: #D2E1FF;
+      background: $bg-link;
       border-radius: 2px;
       padding: 13px 21px;
-      color: #3A79FF;
-      font-size: 13px;
+      color: $color-link;
+      font-size: $font-smm;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -70,7 +70,7 @@
           display: block;
           text-align: center;
           padding: 10px 0;
-          font-size: 20px;
+          font-size: $font-lg;
 
           &:hover {
             color: white !important;

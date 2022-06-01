@@ -6,6 +6,7 @@ body {
   line-height: 1.8;
 }
 
+.container-mdm,
 .container-lg,
 .container-md,
 .container-sd {
@@ -16,6 +17,10 @@ body {
 
 .container-lg {
   max-width: $container-lg-width;
+}
+
+.container-mdm {
+  max-width: $container-mdm-width;
 }
 
 .container-md {
@@ -67,6 +72,10 @@ a {
   justify-content: center
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .intro-title {
   font-size: $font-ms;
   font-family: $main-font;
@@ -94,6 +103,19 @@ a {
   @media (max-width: $breakpoint-sm) {
     .container-sd {
       padding: 0;
+    }
+  }
+}
+
+.blog {
+  @media (max-width: $breakpoint-xl) {
+    .container-mdm {
+      max-width: $container-md-width;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    .container-mdm {
+      max-width: $breakpoint-md;
     }
   }
 }

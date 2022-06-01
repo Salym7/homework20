@@ -3,7 +3,7 @@
 
   &__customers {
     background: $stats-color-first;
-    color: #f0f0f0;
+    color: $stats-color-second;
     padding: 50px 70px;
     text-align: right;
     width: 50%;
@@ -18,7 +18,7 @@
 
   &__customers-number,
   &__users-number {
-    font-size: 48px;
+    font-size: $font-xlll;
   }
 
   &__customers {
