@@ -6,6 +6,10 @@ body {
   line-height: 1.8;
 }
 
+main {
+  margin-top: $header-height;
+}
+
 .container-mdm,
 .container-lg,
 .container-md,
@@ -76,6 +80,27 @@ a {
   flex-direction: column;
 }
 
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
 .intro-title {
   font-size: $font-ms;
   font-family: $main-font;
@@ -89,6 +114,23 @@ a {
   color: $title-color;
 
 }
+
+.controls {
+  &-circles {
+    background: $blog-bg-circles;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  &-circles-active,
+  &-circles:hover {
+    background: $blog-bg-circles-active;
+    transition: .3s;
+    cursor: pointer;
+  }
+}
+
 
 .features {
   @media (max-width: $breakpoint-xl) {

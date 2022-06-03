@@ -86,18 +86,5 @@
     gap: 12px;
   }
 
-  &__circles {
-    background: $blog-bg-circles;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
 
-  &__circles-active {
-    background: #5283FF;
-  }
-
-  &__circles:hover {
-    background: #5283FF;
-  }
 }

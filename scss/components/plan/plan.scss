@@ -37,14 +37,26 @@
       background: $btn-color;
       border: none;
       font-weight: bold;
-      padding: 13px 26px;
+      padding: 10px 26px;
+      cursor: pointer;
+    }
+
+    &-view:hover {
+      background: $accent-color;
+      transition: .3s;
     }
 
     &-see {
       color: #ADB4D2;
-      padding: 12px 25px;
+      padding: 9px 25px;
       border: 1px solid #ADB4D2;
       background: inherit;
+      cursor: pointer;
+    }
+
+    &-see:hover {
+      background: $accent-color;
+      transition: .3s;
     }
 
 
