@@ -106,6 +106,7 @@ a {
   font-family: $main-font;
   font-weight: 500;
   color: $title-color;
+  text-transform: uppercase;
 }
 
 .title {
@@ -160,4 +161,7 @@ a {
       max-width: $breakpoint-md;
     }
   }
+
+
 }
+

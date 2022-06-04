@@ -15,6 +15,9 @@
     gap: 13px;
   }
 
+  a {
+    display: inline-block;
+  }
 
   &__title {
     font-size: $font-lgm;
@@ -80,6 +83,12 @@
     font-family: $font-quicksand;
     padding: 10px 26px;
     font-size: $font-smm;
+  }
+
+  &__link-add:hover,
+  &__link-read:hover {
+    background: $bg-hover;
+    transition: 0.3s;
   }
 
   &__block {

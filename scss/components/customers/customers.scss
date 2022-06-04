@@ -8,4 +8,13 @@
     align-items: flex-end;
     flex-wrap: wrap;
   }
+
+  a {
+    display: inline-block;
+  }
+
+  &__link:hover svg path {
+    fill: #5982E7;
+    transition: 0.3s;
+  }
 }
