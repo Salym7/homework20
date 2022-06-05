@@ -15,6 +15,39 @@
       flex-direction: column;
       gap: 20px;
     }
-
+    &__content {
+      text-align: center;
+    }
+    &__form-input {
+      width: 279px;
+    }
+    &__form-btn {
+      width: 184px;
+    }
+    &__title {
+      font-size: $font-lgm;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    &__form-input {
+      width: 200px;
+    }
+    &__form-btn {
+      width: 150px;
+    }
+  }
+  @media (max-width: $breakpoint-xs) {
+    & {
+      padding: 50px 0;
+    }
+    &__form-input {
+      width: 300px;
+    }
+    &__form-btn {
+      width: 300px;
+    }
+    &__form {
+      flex-direction: column;
+    }
   }
 }

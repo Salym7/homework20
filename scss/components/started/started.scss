@@ -44,10 +44,6 @@
     margin-bottom: 28px;
   }
 
-  &__link {
-    height: 43px;
-  }
-
   &__link-view {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
@@ -56,6 +52,14 @@
     background: $white-color;
     color: $stats-color-first;
     display: inline-block;
+  }
+
+  &__link-view:hover {
+    background: #C4C6D0FF;
+  }
+
+  &__link-read:hover {
+    background: #C4C6D0FF;
   }
 
   &__link-read {

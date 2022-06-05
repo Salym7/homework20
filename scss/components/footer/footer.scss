@@ -1,16 +1,8 @@
-.header {
-  border-bottom: 1px solid #D8E3FE;
+.footer {
   font-family: $font-quicksand;
   font-size: $font-sm;
-  max-height: $header-height;
-  min-height: $header-height;
-
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 99;
 
   &__wrapper {
     padding: 18px 0;
@@ -50,15 +42,16 @@
           &:hover:not(.active) {
             font-weight: 700;
             color: $secondary-accent-color;
+            transition: .3s;
+          }
+
+          &.active:hover {
+            transform: scale(1.2);
           }
 
           &:hover:not(.active) {
             font-weight: 400;
             transition: .3s;
-            transform: scale(1.2);
-          }
-
-          &.active:hover {
             transform: scale(1.2);
           }
         }
@@ -78,12 +71,12 @@
 
         i {
           display: inline-block;
-          fыont-size: $font-lg;
+          font-size: $font-lg;
 
           &:hover {
             color: $title-color;
             transition: .3s;
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
         }
       }
@@ -104,5 +97,10 @@
 
   }
 
+  &__copy {
+    margin-left: 100px;
+    font-family: $font-quicksand;
+    font-size: $font-sm;
+  }
 
 }

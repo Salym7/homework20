@@ -30,6 +30,7 @@
   }
 
   &__form-btn {
+    color: $white-color;
     width: 184px;
     height: 59px;
     border-radius: 5px;
@@ -42,4 +43,6 @@
   &__form-btn:hover {
     background: #C4C6D0FF;
   }
+
+  border-bottom: 1px solid #DAE4FE;
 }
