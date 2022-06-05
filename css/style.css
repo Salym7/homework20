@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Quicksand";
   src: local("Quicksand Bold"), local("Quicksand-Bold"), url("../fonts/Quicksand-Bold.woff2") format("woff2"), url("../fonts/Quicksand-Bold.woff") format("woff"), url("../fonts/Quicksand-Bold.ttf") format("truetype");
@@ -324,7 +323,7 @@ a {
 }
 .header__social-icons ul i {
   display: inline-block;
-  fыont-size: 20px;
+  font-size: 20px;
 }
 .header__social-icons ul i:hover {
   color: #3D4F9F;
@@ -402,16 +401,21 @@ a {
     flex-direction: column;
     gap: 0;
   }
-  .header__navigation nav a {
+  .header__navigation nav ul a {
     display: block;
     text-align: center;
-    padding: 10px 0;
     font-size: 20px;
   }
-  .header__navigation nav a:hover {
+  .header__navigation nav ul a:hover {
     color: white !important;
     background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
     transition: 0.3s;
+  }
+  .header__navigation nav ul a:hover:not(.active) {
+    transform: scale(1);
+  }
+  .header__navigation nav ul a.active:hover {
+    transform: scale(1);
   }
   .header__media-menu-btn:checked + nav {
     display: initial;
@@ -857,6 +861,18 @@ a {
 }
 .blog__slide-media {
   gap: 10px;
+}
+.blog__slide-media-big {
+  position: relative;
+}
+.blog__slide-media-big:after {
+  content: "";
+  background: url("../assets/loupe.svg");
+  width: 65.02px;
+  height: 64.95px;
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
 }
 .blog__slide-media-small {
   gap: 13px;

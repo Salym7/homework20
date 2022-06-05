@@ -11,6 +11,20 @@
     gap: 10px;
   }
 
+  &__slide-media-big {
+    position: relative;
+  }
+
+  &__slide-media-big:after {
+    content: "";
+    background: url("../assets/loupe.svg");
+    width: 65.02px;
+    height: 64.95px;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+  }
+
   &__slide-media-small {
     gap: 13px;
   }

@@ -12,6 +12,7 @@
     .hidden-desktop {
       display: none;
     }
+
   }
 
 
@@ -20,7 +21,6 @@
       min-height: $header_height;
       max-height: $header_height;
     }
-
 
     &__social-cta {
       display: none;
@@ -73,20 +73,29 @@
         ul {
           flex-direction: column;
           gap: 0;
-        }
 
-        a {
-          display: block;
-          text-align: center;
-          padding: 10px 0;
-          font-size: $font-lg;
+          a {
+            display: block;
+            text-align: center;
+            font-size: $font-lg;
 
-          &:hover {
-            color: white !important;
-            background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
-            transition: .3s;
+            &:hover {
+              color: white !important;
+              background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+              transition: .3s;
+            }
+
+            &:hover:not(.active) {
+
+              transform: scale(1);
+            }
+
+            &.active:hover {
+              transform: scale(1);
+            }
           }
         }
+
 
       }
     }
