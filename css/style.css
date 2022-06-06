@@ -551,6 +551,9 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  .customers__list {
+    width: 100%;
+  }
 }
 
 .plan {
@@ -1392,7 +1395,10 @@ a {
   background-color: #fff;
 }
 .footer__wrapper {
-  padding: 18px 0;
+  padding: 90px 0;
+}
+.footer .row {
+  margin-bottom: 15px;
 }
 .footer__navigation {
   gap: 73px;
@@ -1459,17 +1465,6 @@ a {
   font-size: 12px;
 }
 
-.footer__media-menu-btn {
-  display: none;
-}
-@media (min-width: 900px) {
-  .footer [for=media-menu-btn] {
-    display: none;
-  }
-  .footer .hidden-desktop {
-    display: none;
-  }
-}
 @media (max-width: 900px) {
   .footer__copy {
     text-align: center;
@@ -1495,21 +1490,9 @@ a {
   .footer__social {
     width: initial;
   }
-  .footer [for=media-menu-btn] {
-    background: #D2E1FF;
-    border-radius: 2px;
-    padding: 13px 21px;
-    color: #3A79FF;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
   .footer__navigation {
     width: 18%;
     min-width: 140px;
-    gap: 30px;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
   }
   .footer__navigation nav {
     width: 100%;
@@ -1538,12 +1521,20 @@ a {
     display: initial;
   }
 }
+@media (max-width: 768px) {
+  .footer__wrapper {
+    padding: 50px 0;
+  }
+}
 @media (max-width: 400px) {
   .footer__navigation {
     gap: 20px;
   }
   .footer__social-icons ul {
     gap: 25px;
+  }
+  .footer__wrapper {
+    padding: 30px 0;
   }
 }
 

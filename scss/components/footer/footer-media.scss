@@ -1,17 +1,7 @@
 .footer {
-  &__media-menu-btn {
-    display: none;
-  }
-
 
   @media (min-width: $media-header) {
-    [for="media-menu-btn"] {
-      display: none;
-    }
 
-    .hidden-desktop {
-      display: none;
-    }
   }
 
 
@@ -49,22 +39,10 @@
       width: initial;
     }
 
-    & [for="media-menu-btn"] {
-      background: $bg-link;
-      border-radius: 2px;
-      padding: 13px 21px;
-      color: $color-link;
-      font-size: $font-smm;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
 
     &__navigation {
       width: 18%;
       min-width: 140px;
-      gap: 30px;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
 
 
       nav {
@@ -104,6 +82,11 @@
     }
 
   }
+  @media (max-width: $breakpoint-md) {
+    &__wrapper {
+      padding: 50px 0;
+    }
+  }
 
   @media (max-width: $media-header-400) {
     &__navigation {
@@ -111,6 +94,9 @@
     }
     &__social-icons ul {
       gap: 25px;
+    }
+    &__wrapper {
+      padding: 30px 0;
     }
   }
 }
